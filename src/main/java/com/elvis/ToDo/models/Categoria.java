@@ -32,7 +32,7 @@ public class Categoria implements Serializable {
     private Usuario usuario;
 
 //    @JsonProperty(access= JsonProperty.Access.WRITE_ONLY)
-    @OneToMany (mappedBy = "categoria", fetch = FetchType.LAZY)
+    @OneToMany (mappedBy = "categoria", fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true)
     @JsonManagedReference
     private Set<Tarefa> tarefas = new HashSet<>();
 
