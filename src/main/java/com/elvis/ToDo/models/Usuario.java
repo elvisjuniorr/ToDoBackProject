@@ -87,11 +87,11 @@ public class Usuario implements Serializable {
         this.data_criacao = data_criacao;
     }
 
-    public Set<Categoria> getListas() {
+    public Set<Categoria> getCategorias() {
         return categorias;
     }
 
-    public void setListas(Set<Categoria> categorias) {
+    public void setCtaegorias(Set<Categoria> categorias) {
         this.categorias = categorias;
     }
 }

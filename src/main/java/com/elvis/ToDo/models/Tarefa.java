@@ -20,8 +20,7 @@ public class Tarefa implements Serializable {
     @Column(nullable = false)
     private String titulo_tarefa;
 
-    @Lob
-    @Column(nullable = false)
+    @Column(nullable = false, columnDefinition = "TEXT")
     private String descricao;
 
     @Column(nullable = false)
